@@ -4,7 +4,7 @@ define([
 
 	var delete_column = { width:37, id:"crud:remove", header:"", template:"<span class='webix_icon fa-trash-o'></span>" };
 	var delete_handler = function(data){
-		return { 
+		return {
 			"fa-trash-o":function(ev, id){
 				webix.confirm({
 					text:_("Crud.NoUndoMessage"),
@@ -16,7 +16,7 @@ define([
 							target.remove(id.row);
 						}
 					}
-				});	
+				});
 			}
 		};
 	};
@@ -27,7 +27,7 @@ define([
 	};
 
 	var add_button = function(callback){
-		return { 
+		return {
 			view:"button", maxWidth:200, value:_("Crud.AddNew"), click:callback
 		};
 	};
@@ -82,7 +82,7 @@ define([
 			$ui:{ type:"clean", rows:[ toolbar, table ] },
 			$oninit:function(){
 				if (data != id)
-					$$(id).sync(data);
+					$$(id).sync($$(data));
 			}
 		};
 	}
