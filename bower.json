@@ -1,9 +1,10 @@
 {
   "name": "webix-jet-core",
-  "version": "0.1.0",
-  "homepage": "https://github.com/webix-hub/jet-core",
+  "version": "0.1.6",
+  "homepage": "https://github.com/bituls/jet-core",
   "authors": [
-    "Maksim Kozhukh <mkozhukh@ya.ru>"
+    "Maksim Kozhukh <mkozhukh@ya.ru>",
+    "Alex Nganga"
   ],
   "description": "Webix Jet micro framework",
   "main": "core.js",
